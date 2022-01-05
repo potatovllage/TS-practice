@@ -11,7 +11,7 @@ function App() {
         <Route element={<MainPage />} path="/" />
         <Route element={<MakePost />} path="/Make" />
         <Route element={<ShowPost />} path="/Show/:id" />
-        <Route element={<PetchPost />} path="/Petch" />
+        <Route element={<PetchPost />} path="/Petch/:id" />
       </Routes>
     </BrowserRouter>
   );
