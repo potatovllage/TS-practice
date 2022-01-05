@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import MainPage from "./pages/Main/MainPage";
-import MakePost from "./components/WritePost/MakePost";
-import ShowPost from "./components/ShowPost/ShowPost";
-import PetchPost from "./components/WritePost/PetchPost";
+import MainPage from "./pages/main/MainPage";
+import MakePost from "./components/writePost/MakePost";
+import ShowPost from "./components/showPost/ShowPost";
+import PetchPost from "./components/writePost/PetchPost";
 
 function App() {
   return (
