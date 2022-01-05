@@ -34,11 +34,13 @@ export const ShowBoard = styled.div`
   padding: 10px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 `;
 
 export const Product = styled.div`
   width: 800px;
   height: 100px;
+  margin-top: 10px;
   border: 3px solid black;
   display: flex;
   justify-content: center;
