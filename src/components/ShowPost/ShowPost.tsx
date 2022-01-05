@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import * as S from "./style";
@@ -9,6 +10,7 @@ function ShowPost() {
   const param = useParams();
 
   const [boardData, setBoardData] = useState({
+    id: "",
     title: "",
     description: "",
   });
@@ -53,7 +55,9 @@ function ShowPost() {
         </S.PostText>
       </S.PostDiv>
       <S.PostFooter>
-        <S.ReWrite onClick={Petch} type="button" value="수정" />
+        <Link to={`/Petch/${boardData.id}`}>
+          <S.ReWrite onClick={Petch} type="button" value="수정" />
+        </Link>
         <S.DeleteBtn onClick={onDelete} type="button" value="삭제" />
         <S.MainBtn onClick={Main} type="button" value="main" />
       </S.PostFooter>
