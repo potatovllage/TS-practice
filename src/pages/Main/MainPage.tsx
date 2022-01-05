@@ -44,7 +44,7 @@ function Main() {
         <S.ShowBoard>
           {info.map((item, index) => (
             <S.Product>
-              <Link to="Show">
+              <Link to={`/Show/${item.id}`}>
                 <h2>{item.title}</h2>
               </Link>
             </S.Product>
